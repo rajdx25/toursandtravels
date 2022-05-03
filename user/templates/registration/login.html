@@ -1,0 +1,26 @@
+
+{% block title %}User Permission{% endblock %}
+{% load static %}
+{% block content %}
+<div>
+  
+  <h2>Login</h2>
+  <div style="color:red">
+    {% if message %}
+      <div class="danger">{{message}}</div>
+    {% endif %}
+    
+      <form method="post" >
+        {% csrf_token %}
+  </div>  
+        
+          Username:<input type="text" name="username" placeholder="Username" class="login"><br><br>
+          Password:<input type="password" name="password" placeholder="Password"><br><br>
+          <input type="submit" value="Log in">
+          
+                      
+      
+    </form>
+  </div> 
+{% endblock %}
+

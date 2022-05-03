@@ -1,0 +1,41 @@
+{% extends 'user/base.html'%}
+{% load static %}
+
+{% block body %}
+<h2>contact us</h2>
+{% comment %} <div class="wrapper"> {% endcomment %}
+   <div class="form">
+      <div class="form_container">
+   <!--Information on the left side of the contact form -->
+      <div class="form_left">
+   <!--Place to input the name-->
+         <div class="input_field">
+         YOUR NAME: <input type="text" placeholder="Your Name*">
+         </div><br>
+   <!--Place to input email -->
+         <div class="input_field">
+         YOUR EMAIL:<input type="text" placeholder="Your Email*">
+         </div><br>
+   <!--Place to input mobile number-->
+         <div class="input_field">
+         PHONE NO: <input type="text" placeholder="Your Phone*">
+         </div><br>
+      </div>
+   
+   <!--Place to input message-->
+      <div class="form_right">
+         MESSAGE:<textarea placeholder="Your Message*"></textarea>
+      </div>
+   
+      </div>
+   
+   <!--Button to send message-->
+      <div class="btn">
+      <input type="submit" value="send" class="btn btn-primary">
+      </div>
+   
+   </div>
+   </div>
+{% comment %} </div> {% endcomment %}
+
+{% endblock body %}
